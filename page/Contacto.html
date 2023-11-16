@@ -15,98 +15,112 @@
 
 </head>
 <header>
-    <nav>
-        <div>
-            <br>
-            <a href="../index.html"><img src="../img/logo recortado.png" alt="logo" width=100 height="80"></a>
-        </div>
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><a href="../index.html"><img src="../img/logo recortado.png" alt="logo"
+                        width=100 height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><a
+                                    href="../index.html">Inicio</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Orígenes.html">Orígenes</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Servicios.html">Servicios</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Productos.html">Productos</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Contacto.html">Contacto</a></a>
+                        </li>
 
-        <div>
-            <ul class="menu">
-
-                <li>
-
-                    <a href="../index.html">Inicio</a>
-                    <a href="../page/Orígenes.html">Orígenes</a>
-                    <a href="../page/Servicios.html">Servicios</a>
-                    <a href="../page/Productos.html">Productos</a>
-                    <a href="../page/Contacto.html">Contacto</a>
-
-                </li>
-            </ul>
-
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
         </div>
     </nav>
 </header>
 
 <body>
+    <h1 class="text-center p-3">Contáctanos</h1>
+    <hr>
+
     <main>
-        <br>
 
-
-
-
-        <h1>Contáctanos</h1>
-        <hr>
-        <br>
         <section class="Contacto">
             <div class="contactanos">
+                <div class="mb-3">
 
-                <form action="">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                    <input type="nombre y apellido" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Nombre y apellido" required>
+                </div>
+                <div class="mb-3">
 
-                    <div>
-                        <br>
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" placeholder="Ingresar nombre y apellido" required>
-                    </div>
-                    <div>
-                        <br>
-                        <label for="">E-mail</label>
-                        <input type="email" placeholder="Ingresar correo eléctronico" required>
-                    </div>
-                    <div>
-                        <br>
-                        <label for="Mensaje">Asunto del mensaje</label>
-                        <input type="text" placeholder="Motivo del mensaje" required>
-                    </div>
+                    <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
 
-                    <div>
-                        <br>
-                        <textarea name="" id="" cols="40" rows="10" placeholder="Escribir mensaje" required></textarea>
-                    </div>
+                    <label for="Mensaje" class="form-label">Motivo del mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="50" rows="5"
+                        placeholder="Escribir mensaje" required></textarea>
+                </div>
 
-                    <div>
-                        <br>
-                        <input type="checkbox" required>
-                        <span>Términos y condiciones</span>
-                    </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" required value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Acepto términos y condiciones
+                    </label>
+                </div>
 
-                    <br>
-                    <div>
+                <div>
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                    <button type="reset" class="btn btn-light">Borrar</button>
 
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar</button>
 
-                    </div>
+                </div>
             </div>
 
 
             <div class="mapagoogle">
 
 
-                <h3>Dónde nos encontramos</h3>
+                <h3 class="text-center">Dónde nos encontramos...</h3>
 
-                <br>
+
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.6027250128573!2d-4.570772324483695!3d36.660006872287404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e5c0d278c65b%3A0xa1165e76c4469f7a!2sLeonardo%20peluqueria!5e0!3m2!1ses!2ses!4v1693999851123!5m2!1ses!2ses"
-                    width="700" height="300" style="border: 0px;;" allowfullscreen="" loading="lazy"
+                    width="500" height="300" style="border: 0px;;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
 
-                <p>Dirección Reyes Católicos número 60, Alhaurín de la torre, Málaga España.Teléfono de
-                    Contacto
-                    +34677593071</p>
+                <p>Dirección Reyes Católicos número 60,
+                    Alhaurín de la torre, Málaga España.
+                    Teléfono de Contacto +34677593071
+                </p>
+
+
+
+
+
+
+
 
             </div>
         </section>
@@ -117,28 +131,32 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-<br>
+
 <footer>
+    <footer class="footer">
+
+        <div class="footerContenido d-flex flex-column text-center">
+
+            <nav>
+                <ul class="nav justify-content-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://wwww.facebook.com"
+                            target="_blank">Facebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.Instagram.com" target="_blank">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.Twitter.com" target="_blank">Twitter</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
 
 
-    <nav>
-        <ul class="menu footer">
-            <li>
-                <br>
-                <img src="../img/109facebook.png" alt="icono facebook">
-                <a href="https://wwww.facebook.com" target="_blank">Facebook</a>
-                <img src="../img/109instagram.png" alt="instagram">
-                <a href="https://www.Instagram.com" target="_blank">Instagram</a>
-                <img src="../img/109twitter.png" alt="twiter">
-                <a href="https://wwww.Twitter.com" target="_blank">Twitter</a>
-
-            </li>
-        </ul>
-    </nav>
-
-
-
-
-</footer>
+    </footer>
 
 </html>

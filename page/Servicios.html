@@ -19,72 +19,98 @@
 
 </head>
 <header>
-    <nav>
-        <div>
-            <br>
-            <a href="../index.html"><img src="../img/logo recortado.png" alt="logo" width=100 height="80"></a>
-        </div>
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><a href="../index.html"><img src="../img/logo recortado.png" alt="logo"
+                        width=100 height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><a
+                                    href="../index.html">Inicio</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Orígenes.html">Orígenes</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Servicios.html">Servicios</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Productos.html">Productos</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><a href="../page/Contacto.html">Contacto</a></a>
+                        </li>
 
-        <div>
-
-            <ul class="menu">
-
-                <li>
-                    <a href="../index.html">Inicio</a>
-                    <a href="../page/Orígenes.html">Orígenes</a>
-                    <a href="../page/Servicios.html">Servicios</a>
-                    <a href="../page/Productos.html">Productos</a>
-                    <a href="../page/Contacto.html">Contacto</a>
-                </li>
-            </ul>
-
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
         </div>
     </nav>
 </header>
 
 <body>
     <main>
-        <br>
-        <h1>Servicios</h1>
+        <h1 class="text-center p-3">Servicios</h1>
+
         <hr>
-        <br>
+
         <section class="SERVICIO">
 
 
-            <div class="tabla">
-                <table border="cellpadding= 10px">
+            <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Nº</th>
+                        <th scope="col">Servicios</th>
+                        <th scope="col">Precios</th>
+
+                    </tr>
+                </thead>
+                <tbody>
 
                     <tr>
-                        <th>Servicios</th>
-                        <th>Precios</th>
-                    </tr>
+                        <th scope="row">1</th>
+                        <td>Corte de cabello</td>
+                        <td>€ 11.00</td>
 
-                    <td>Corte de cabello</td>
-                    <td>€ 11.00</td>
+
                     </tr>
                     <tr>
+                        <th scope="row">2</th>
                         <td>Corte de cabello y lavado</td>
                         <td>€ 12.00</td>
-                    </tr>
 
+                    </tr>
                     <tr>
+                        <th scope="row">3</th>
                         <td>Barba</td>
                         <td>€ 5.00</td>
                     </tr>
-
                     <tr>
+                        <th scope="row">4</th>
                         <td>Corte niños, silla pequeña</td>
                         <td>€ 10.00</td>
                     </tr>
-
-
-                </table>
+                </tbody>
+            </table>
 
             </div>
 
-            <div class="fotoleocortando">
 
-                <img src="../img/Leo trabajando 2023-09-06 a las 14.52.30.jpg" alt="trabajando" width=500 height="300">
+            <div class="fotoleocortando">
+                <img src="../img/Leo trabajando 2023-09-06 a las 14.52.30.jpg" p-5 auto width="600" class="img-fluid"
+                    alt="trabajando">
+
             </div>
         </section>
     </main>
@@ -93,29 +119,26 @@
         crossorigin="anonymous"></script>
 
 </body>
-<br>
-<footer>
+<footer class="footer">
+    <div class="footerContenido d-flex flex-column text-center">
 
+        <nav>
+            <ul class="nav justify-content-center">
 
-    <nav>
-
-        <div>
-
-            <ul class="menu footer">
-                <li>
-                    <br>
-                    <img src="../img/109facebook.png" alt="icono facebook">
-                    <a href="https://wwww.facebook.com" target="_blank">Facebook</a>
-                    <img src="../img/109instagram.png" alt="instagram">
-                    <a href="https://www.Instagram.com" target="_blank">Instagram</a>
-                    <img src="../img/109twitter.png" alt="twiter">
-                    <a href="https://wwww.Twitter.com" target="_blank">Twitter</a>
-
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://wwww.facebook.com"
+                        target="_blank">Facebook</a>
                 </li>
-            </ul>
-        </div>
 
-    </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.Instagram.com" target="_blank">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.Twitter.com" target="_blank">Twitter</a>
+                </li>
+
+            </ul>
+        </nav>
 
 </footer>
 
